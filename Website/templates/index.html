@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>WEBSITE</title>
+    <link rel="stylesheet" href="../static/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-div">
+            <h2 class="head-title">Weather Prediction</h2>
+            <form action="/predict" method="post" name="myform">
+                <p>Enter Precipitation value :</p>
+                <input type="text" name="precipitation" placeholder="0 to 55">
+                <p>Enter Maximum Temperature :</p>
+                <input type="text" name="maxTemp" placeholder="-1.5 to 35">
+                <p>Enter Minimum Temperature :</p>
+                <input type="text" name="minTemp" placeholder="-7 to 18">
+                <p>Enter Wind Speed :</p>
+                <input type="text" name="windSpeed" placeholder="0.5 to 9.5">
+                <br><br>
+                <input type="submit">
+            </form>
+        </div>
+        <p class="output"><span>{{pred}}</span></p>
+    </div>
+
+</body>
+
+</html>
